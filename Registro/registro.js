@@ -15,7 +15,7 @@ function guardarRegistro(event) {
   // Abrir o crear la base de datos 'registroDB'
   const request = window.indexedDB.open('registroDB', 1);
 
-  request.onsuccess = function(event) {
+  request.onsuccess = function (event) {
     const db = event.target.result;
     console.log('Base de datos abierta o creada con éxito');
 
@@ -26,7 +26,7 @@ function guardarRegistro(event) {
     // Comprobar si ya existe un registro con la misma clave
     const getRequest = objectStore.get(usuario);
 
-    getRequest.onsuccess = function(event) {
+    getRequest.onsuccess = function (event) {
       const existingRegistro = event.target.result;
       if (existingRegistro) {
         console.log('El registro con la clave ya existe en IndexedDB');
@@ -44,42 +44,41 @@ function guardarRegistro(event) {
         // Agregar el objeto de registro al almacén de objetos 'registro'
         const addRequest = objectStore.add(registro);
 
-        addRequest.onsuccess = function(event) {
+        addRequest.onsuccess = function (event) {
           // Mostrar notificación "Registro Exitoso"
-  Toastify({
-    text: "Registro Exitoso 👍",
-    duration: 3000,
-    gravity: "top", // `top` or `bottom`
-    position: "right", // `left`, `center` or `right`
-    style: {
-      background: "black",
-    },
-  }).showToast();
+          Toastify({
+            text: "Registro Exitoso 👍",
+            duration: 3000,
+            gravity: "top", // `top` or `bottom`
+            position: "right", // `left`, `center` or `right`
+            style: {
+              background: "black",
+            },
+          }).showToast();
 
-  // Redirigir a la página de inicio de sesión después de 3 segundos
-  setTimeout(() => {
-    window.location.href = '/3- CURSO CODER JS/Clase 17/Entrega final/Login/login.html';
-  }, 3000);
-}
-        
+          // Redirigir a la página de inicio de sesión después de 3 segundos
+          setTimeout(() => {
+            window.location.href = '/3- CURSO CODER JS/Clase 17/Entrega final/Login/login.html';
+          }, 3000);
+        }
 
-        addRequest.onerror = function(event) {
+
+        addRequest.onerror = function (event) {
           console.error('Error al guardar el registro en IndexedDB', event.target.error);
-          // Mostrar mensaje de error o manejar el error de alguna otra manera
         };
       }
     };
 
-    getRequest.onerror = function(event) {
+    getRequest.onerror = function (event) {
       console.error('Error al obtener el registro en IndexedDB', event.target.error);
     };
   };
 
-  request.onerror = function(event) {
+  request.onerror = function (event) {
     console.error('Error al abrir/crear la base de datos', event.target.error);
   };
 
-  request.onupgradeneeded = function(event) {
+  request.onupgradeneeded = function (event) {
     const db = event.target.result;
     const objectStore = db.createObjectStore('registro', { keyPath: 'usuario' });
     console.log('Estructura de la base de datos actualizada');
