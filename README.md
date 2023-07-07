@@ -1,9 +1,10 @@
 # JavaScript - CoderHouse
-✔️**FINALIZADO**✔️
+                                                              ✔️**FINALIZADO**✔️
 
 Este trabajo se encuentra finalizado, fue realizado como proyecto final para el curso "JavaScript" de CoderHouse.
 
-📝**DESCRIPCIÓN**📝  
+
+                                                              📝**DESCRIPCIÓN**📝  
 
 El objetivo de este Proyecto fue crear una Concesionaria de Auto con JavaScipt, la cual cuente con un Registro, un Login y la Pagina Principal, entre otras.        
 Estos mismos guardan sus datos con la api de IndexDB.
