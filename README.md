@@ -13,8 +13,13 @@ Cuando se hace un login exitoso, nos redirige a la Pagina Principal de la Conces
 🔧Herramientas/Lenguajes/Librerias utilizados:
 
 Visual Studio Code
+
 JavaScript
+
 HTML
+
 CSS
+
 Api --> IndexDB
+
 Libreria --> Toastify
