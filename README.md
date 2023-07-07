@@ -1,9 +1,9 @@
 # JavaScript - CoderHouse
-✔️Finalizado✔️
+✔️**FINALIZADO**✔️
 
 Este trabajo se encuentra finalizado, fue realizado como proyecto final para el curso "JavaScript" de CoderHouse.
 
-📝  Descripcion📝  
+📝**DESCRIPCIÓN**📝  
 
 El objetivo de este Proyecto fue crear una Concesionaria de Auto con JavaScipt, la cual cuente con un Registro, un Login y la Pagina Principal, entre otras.        
 Estos mismos guardan sus datos con la api de IndexDB.
@@ -15,13 +15,13 @@ Login --> Cuando se hace un login exitoso con los datos que estan guardados en I
 
 Pagina Principal --> En esta seccion tenemos dos opciones "Ver inventario" y "Contacto" cuando se selecciona la de "ver inventario" nos muestra los autos que hay, y si queremos contactar a la concesionaria por algun auto que estamos interesados, le damos click al boton de "ver detalles" el cual lo incluye cada auto y este nos abre el form de contacto, el cual el mensaje se agrega automaticamente dependiendo el auto que querramos que nos manden mas información, cuando se envia el form, tenemos una validacion para que nos muestra que se envió correctamente.
 
-Todas estas seccion, tambien cuentan con algunas validacion como :
+**Todas estas seccion, tambien cuentan con algunas validacion como:**
 - Que todos los campos sean obligatorios
 - Que el campo email, se pase solo tipo "email"
 - Que el password este encriptado
   
 
-🔧Herramientas/Lenguajes/Librerias utilizados:
+🔧**Herramientas/Lenguajes/Librerias utilizados:**
 
 - Visual Studio Code                                                                                                                                                  
 - JavaScript                                                                                                                                                          
