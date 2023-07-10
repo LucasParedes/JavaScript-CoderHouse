@@ -2,7 +2,7 @@
 
 ✔️**FINALIZADO**✔️
   
-Este trabajo se encuentra finalizado, fue realizado como proyecto final para el curso "JavaScript" de CoderHouse.
+Este trabajo se encuentra finalizado, fue realizado como proyecto final para el curso "JavaScript" de CoderHouse. El obtuve una nota de 10.
 
 
 📝**DESCRIPCIÓN**📝  
